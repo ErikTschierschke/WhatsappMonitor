@@ -44,3 +44,4 @@ class Entry:
         if self.start_dt is not None:
             self.online = False
             self.data.append((self.start_dt, dt.now()))
+        self.start_dt = None
