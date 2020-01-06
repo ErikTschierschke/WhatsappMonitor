@@ -1,6 +1,8 @@
-﻿# WhatsappMonitor
+[![Python 3.8](https://img.shields.io/badge/Python-3.8-blue.svg?style=flat-square)](http://www.python.org/download/)
+# WhatsappMonitor
+ 
 ## About
-WhatsappMonitor monitors the online times of selected contacts and displays them as a graph.
+ WhatsappMonitor monitors the online times of selected contacts and displays them as a graph.
 It's original purpose was to show how even tiny pieces of personal information like whether you're using Whatsapp just now can become scarily powerful if it's collected and evaluated.
 Running this script for an extended period of time can give sensitive knowledge about personal behavior of the monitored contacts like sleep routines, work times and correspondence with others.
 
