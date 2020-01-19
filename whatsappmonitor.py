@@ -35,7 +35,7 @@ if __name__ == '__main__':
         quit(2)
     browser.get('https://web.whatsapp.com/')
 
-    img_phone = '//div[@class="_1wSzK"]'
+    img_phone = '//div[@class="HGVhc"]'
     WebDriverWait(browser, 500).until(ec.presence_of_element_located((By.XPATH, img_phone)))
     try:
         monitor.start(contacts.select_contacts(browser), browser)
