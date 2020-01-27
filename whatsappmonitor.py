@@ -17,7 +17,7 @@ def intro():
     print('Github:\thttps://github.com/ErikTschierschke/WhatsappMonitor/')
     print('\n')
     print('Warning: Running this script will have side effects on your Whatsapp account. See '
-          'https://github.com/ErikTschierschke/WhatsappMonitor/README.md#warning! for more informstion.')
+          'https://github.com/ErikTschierschke/WhatsappMonitor/blob/master/README.md#warning for more informstion.')
     print('Press RETURN to continue.')
     input()
 
@@ -35,7 +35,7 @@ if __name__ == '__main__':
         quit(2)
     browser.get('https://web.whatsapp.com/')
 
-    img_phone = '//div[@class="HGVhc"]'
+    img_phone = '/html/body/div[1]/div/div/div[4]/div/div/div[1]'
     WebDriverWait(browser, 500).until(ec.presence_of_element_located((By.XPATH, img_phone)))
     try:
         monitor.start(contacts.select_contacts(browser), browser)

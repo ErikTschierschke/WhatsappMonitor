@@ -11,7 +11,7 @@ selected = False
 def select_contacts(browser):
     browser.set_window_position(-3000, 0)
     time.sleep(2)
-    contacts = browser.find_elements_by_xpath('//div[@class="X7YrQ"]')
+    contacts = browser.find_elements_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[2]/div[1]/div/div/child::*')
     print('Indexing contacts. This may take some time.')
     amount = len(contacts)
     i = 1
@@ -63,12 +63,14 @@ def get_input():
 
 def show_contacts():
     for i in range(len(contact_dict)):
-        name = contact_dict.get(i).find_element_by_xpath('.//span[@class="_19RFN _1ovWX _F7Vk"]').text
+        name = contact_dict.get(i).find_element_by_xpath('.//div/div/span/span').text
         print('\t\t[' + str(i) + ']\t' + name)
 
 
 def is_not_group(browser):
-    browser.find_element_by_xpath('(//div[@class="_3lq69"]/div)[last()]').click()
-    browser.find_element_by_xpath('//div[@class="_3zy-4 Sl-9e"]').click()
+    browser.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/header/div[3]/div/div[3]').click()
+    browser.find_element_by_xpath(
+        '/html/body/div[1]/div/div/div[4]/div/header/div[3]/div/div[3]/span/div/ul/li[1]/div').click()
 
-    return not bool(browser.find_elements_by_xpath('//div[@class="_30prC"]'))
+    return not bool(browser.find_elements_by_xpath(
+        '/html/body/div[1]/div/div/div[2]/div[3]/span/div/span/div/div/div[1]/div[1]/div[2]/div[1]/span[2]/div'))
