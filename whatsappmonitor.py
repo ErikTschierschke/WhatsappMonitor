@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 import contacts
 import monitor
 
-__version__ = 'v1.0'
+__version__ = 'v1.1'
 
 
 def intro():
