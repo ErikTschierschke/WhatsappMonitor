@@ -31,13 +31,18 @@ if __name__ == '__main__':
     try:
         browser = webdriver.Firefox()
     except WebDriverException:
-        print('geckodriver was not found. Please install it manually or run the install-gecko script.')
+        print('An error occurred while executing the script.\n\n'
+              "Most likely this is because the script didn't find either geckodriver or Firefox.\n"
+              'If both are properly installed and this error continues to occur please create an issue at '
+              'https://github.com/ErikTschierschke/WhatsappMonitor/issues including the following message:\n'
+              + traceback.format_exc())
         quit(2)
     browser.get('https://web.whatsapp.com/')
 
     img_phone = '/html/body/div[1]/div/div/div[4]/div/div/div[1]'
-    WebDriverWait(browser, 500).until(ec.presence_of_element_located((By.XPATH, img_phone)))
+
     try:
+        WebDriverWait(browser, 500).until(ec.presence_of_element_located((By.XPATH, img_phone)))
         monitor.start(contacts.select_contacts(browser), browser)
     except WebDriverException:
         print('An error occurred while executing the script.\n\n'
