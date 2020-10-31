@@ -68,9 +68,7 @@ def show_contacts():
 
 
 def is_not_group(browser):
-    browser.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/header/div[3]/div/div[3]').click()
-    browser.find_element_by_xpath(
-        '/html/body/div[1]/div/div/div[4]/div/header/div[3]/div/div[3]/span/div/ul/li[1]/div').click()
+    browser.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/header/div[2]/div/div/span').click()
 
     return not bool(browser.find_elements_by_xpath(
         '/html/body/div[1]/div/div/div[2]/div[3]/span/div/span/div/div/div[1]/div[1]/div[2]/div[1]/span[2]/div'))
