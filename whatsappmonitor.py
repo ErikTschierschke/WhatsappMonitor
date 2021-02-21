@@ -17,7 +17,7 @@ def intro():
     print('Github:\thttps://github.com/ErikTschierschke/WhatsappMonitor/')
     print('\n')
     print('Warning: Running this script will have side effects on your Whatsapp account. See '
-          'https://github.com/ErikTschierschke/WhatsappMonitor/blob/master/README.md#warning for more informstion.')
+          'https://github.com/ErikTschierschke/WhatsappMonitor/blob/master/README.md#warning for more information.')
     print('Press RETURN to continue.')
     input()
 
