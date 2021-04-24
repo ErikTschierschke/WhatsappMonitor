@@ -1,6 +1,13 @@
+### Discontinuation note
+
+> As of Whatsapp Web version 2.2114 this script is **broken**. For details see #3.
+
+<br><br>
+
 [![Python 3.8](https://img.shields.io/badge/Python-3.8-blue.svg?style=flat-square)](http://www.python.org/download/)
+
 # WhatsappMonitor
- 
+
 ## About
  WhatsappMonitor monitors the online times of selected contacts and displays them as a graph.
 It's original purpose was to show how even tiny pieces of personal information like whether you're using Whatsapp just now can become scarily powerful if it's collected and evaluated.
