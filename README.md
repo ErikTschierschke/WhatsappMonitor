@@ -1,6 +1,6 @@
 ### Discontinuation note
 
-> As of Whatsapp Web version 2.2114 this script is **broken**. For details see [#3}(https://github.com/ErikTschierschke/WhatsappMonitor/issues/3#issuecomment-826085792).
+> As of Whatsapp Web version 2.2114 this script is **broken**. For details see [#3](https://github.com/ErikTschierschke/WhatsappMonitor/issues/3#issuecomment-826085792).
 
 <br><br>
 
